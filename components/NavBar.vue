@@ -1,8 +1,8 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-  <div class="container-fluid">
+  <div class="nav container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="~/assets/logo.png" alt="Logo Tediber">
+      <img src="~/assets/logo.png" alt="Logo Tediber" id="logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -61,9 +61,17 @@
 #navbar{
   background: #ffffff !important;
   color: #212348;
+  width: 100%;
+}
+.nav{
+  width: 80% !important;
+  margin: 0 auto
+}
+#navbar ul{
+    margin: 0 auto;
 }
 #navbar ul li{
-  padding: 19px 32px 19px 32px;
+  padding: 15px;
 }
 #navbar ul li a{
   color: #212348;
@@ -72,5 +80,12 @@
   padding: 0px 12px 0 12px;
 }
 
+/* responsive */
+
+@media and (max-width: 640px) {
+
+}
+
 </style>
+
 
