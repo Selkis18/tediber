@@ -47,11 +47,12 @@
         <li class="nav-item">
           <a class="nav-link" href="#">CONTACTEZ-NOUS</a>
         </li>
-        <a class="navbar-brand" href="#">
-          <img src="~/assets/panier.png" alt="Logo Tediber">
-        </a>
           </ul>
+
     </div>
+     <a class="navbar-brand" href="#">
+          <img src="~/assets/panier.png" alt="Logo Tediber" id="panier">
+        </a>
   </div>
 </nav>
 </template>
@@ -82,8 +83,22 @@
 
 /* responsive */
 
-@media and (max-width: 640px) {
-
+@media screen and (max-width: 991px){
+  #logo{
+    position: relative;
+    left: 87%;
+  }
+  .navbar-toggler{
+    position: relative;
+    right: 58%;
+  }
+  #panier{
+    position: relative;
+    right: -87%;
+  }
+  #logo2{
+    display: none;
+  }
 }
 
 </style>
